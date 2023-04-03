@@ -12,9 +12,9 @@ import Search from "./search"
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true)
-  window.addEventListener('load', () => {
+  setTimeout(() => {
     setIsLoading(false)
-  })
+  }, 3000);
   return isLoading ? <Loader/> : (
     <div className="max-w-[1440px] mx-auto">
         <Navbar/>
